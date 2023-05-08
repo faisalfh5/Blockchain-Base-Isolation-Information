@@ -1,0 +1,65 @@
+.educationModal,.skillsModal{
+    padding: 40px 0px;
+    background-color: #062831;
+   width: 50%;
+   color: #1ddfce;
+   border-radius: 10px;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 65346;
+}
+.input-modal{
+    height: 36px;
+    width: 80%;
+    background-color:transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #1ddfce;
+    color: #1ddfce;
+}
+
+.buttonModalClose{
+    position: absolute;
+    top: 0%;
+    right: 3%;
+}
+.skillsItems{
+    margin: 8px;
+    background-color: transparent;
+    color: #fff;
+    padding: 3px 14px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+.educationDetails{
+    padding: 100px 0px;
+}
+.workExperience{
+    padding: 100px 0px;
+}
+.SkillsDetails{
+    padding: 100px 0px;
+}
+
+.modalLabel{
+    display: block;
+}
+@media (max-width:600px) {
+    .input-modal{
+        height: 36px;
+        width: 70%
+    }
+    .educationModal{
+        padding: 36px 0px;
+        background-color: #000814;
+        width: 90%;
+    }
+    .wrapper {
+        padding: 8px 0;
+    }
+}

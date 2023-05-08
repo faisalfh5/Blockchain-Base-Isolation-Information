@@ -1,0 +1,142 @@
+* { margin: 0;padding: 0; }
+
+.form{
+    background-color: #062831;
+    padding: 22px 0px;
+}
+.section-form{
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #021f27;
+}
+.heading-form{
+    color: #1ddfce;
+    font-size: 35px;
+    padding: 15px 0px;
+}
+.heading-details{
+    color: #1ddfce;
+    font-size: 18px;
+    padding: 15px 0px;
+}
+.wrapper{
+    padding: 20px 0;
+    position: relative;
+}
+.wrapper .name-input{
+    height: 36px;
+    width: 40%;
+    background-color:transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #1ddfce;
+    color: #1ddfce;
+}
+.wrapper .name-label{
+    display: block;
+    color:#1ddfce ;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    right: auto;
+    pointer-events: none;
+}
+
+
+@keyframes in {
+    0%{
+        left: 30%;
+        right: auto;
+    }
+   
+    100%{
+       left: auto;
+       right: 30%;
+    }
+}
+input:focus  ~ label, input:valid ~ label{
+   animation: in 0.5s ;
+   animation-fill-mode: both;
+}
+
+button{
+    margin: 15px 0px;
+    background-color: transparent;
+    color: #1ddfce;
+    padding: 5px 7px;
+    border-color: #1ddfce;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+  .wrapper  .name-input{
+    width: 80%;
+   
+    }
+    .wrapper .name-label{
+        left: 7%;
+    }
+    @keyframes in {
+        0%{
+            left: 7%;
+            right: auto;
+        }
+       
+        100%{
+           left: auto;
+           right:8%;
+        }
+    }
+}
+.Link{
+    color: #1ddfce !important;
+    text-decoration: none !important;
+}
+
+/* .move {
+    width: 100px;
+    height: 100px;
+    
+    position: relative;
+
+    animation:  example 9s linear 4s infinite alternate;
+  }
+  
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:1000px; top:0px;}
+    75%  { left:0px; top:0px;}
+    
+  } */
+  .animate-charcter
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #106e7a 29%,
+      #13a1ff 67%,
+      #00ffff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    margin-top: 200px;
+    color: #fff;
+    background-clip: text;
+   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 80px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
